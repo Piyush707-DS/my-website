@@ -612,29 +612,7 @@ section {
   background-color: var(--primary-hover);
 }
 
-/* About Section */
-.about-section {
-  padding: 3rem 0;
-  background-color: var(--white);
-}
 
-.about-content {
-  max-width: 48rem;
-  margin: 0 auto;
-}
-
-.about-text {
-  text-align: center;
-}
-
-.about-text p {
-  font-size: 1.125rem;
-  margin-bottom: 1.5rem;
-}
-
-.about-text p:last-child {
-  margin-bottom: 0;
-}
 
 /* Media Queries */
 @media (min-width: 640px) {
