@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On Time Media Production</title>
+    <meta name="description" content="Light Camera Action - Welcome to On Time Media Production">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS library for animations -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--favicon-->
+    <link rel="icon" type="image/x-icon" href="resize(1)(1).png">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="resize(1)(1).png" alt="On Time Media Production Logo" width="50" height="50">
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+                    <li><a href="#services" class="nav-link" data-section="services">Services</a></li>
+                    <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+                    <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+    <div class="hero-background"></div>
+    <div class="hero-content">
+        <h1 class="hero-title animate-fade-in" data-delay="500">Light</h1>
+        <h1 class="hero-title animate-fade-in" data-delay="1000">Camera</h1>
+        <h1 class="hero-title animate-fade-in" data-delay="1500">Action</h1>
+        <p class="hero-subtitle animate-fade-in" data-delay="2000"></p>
+    </div>
+</section>
+
+        <!-- Video Section -->
+        <section id="video" class="video-section">
+            <div class="container">
+                <h2 class="section-title">Welcome to On Time Media Production</h2>
+                <div class="video-container">
+                    <div class="video-wrapper">
+                        <video id="promo-video" src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/SOS_Video-CKom68da368wcJRLK6nILAMQmGSNJi.mp4" class="video" controls playsinline loop muted></video>
+                        <div class="video-overlay">
+                            <button id="play-button" class="play-button">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expertise Section -->
+        <section id="expertise" class="expertise-section">
+            <div class="container">
+                <div class="divider"></div>
+                <div class="expertise-content" data-aos="fade-up">
+                    <h2 class="expertise-title" data-aos="fade-up" data-aos-delay="200">Your Concept,</h2>
+                    <h2 class="expertise-title" data-aos="fade-up" data-aos-delay="400">Our Expertise</h2>
+                    <p class="expertise-text" data-aos="fade-up" data-aos-delay="600">
+                        At On Time Media Production, we bring your ideas to life with our creative expertise and cutting-edge technology.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section">
+            <div class="container">
+                <h2 class="section-title">Our Services</h2>
+                <div class="services-grid">
+                    <div class="service-card" data-aos="fade-up">
+                        <div class="service-header">
+                            <i class="fas fa-cube service-icon"></i>
+                            <h3 class="service-title">CGI and 3D Animation</h3>
+                        </div>
+                        <p class="service-description">Professional cgi and 3d animation services tailored to your needs.</p>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-header">
+                            <i class="fas fa-image service-icon"></i>
+                            <h3 class="service-title">Product Visualization</h3>
+                        </div>
+                        <p class="service-description">Professional product visualization services tailored to your needs.</p>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-header">
+                            <i class="fas fa-globe service-icon"></i>
+                            <h3 class="service-title">Website Building</h3>
+                        </div>
+                        <p class="service-description">Professional website building services tailored to your needs.</p>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-header">
+                            <i class="fas fa-camera service-icon"></i>
+                            <h3 class="service-title">Photography</h3>
+                        </div>
+                        <p class="service-description">Professional photography services tailored to your needs.</p>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="service-header">
+                            <i class="fas fa-edit service-icon"></i>
+                            <h3 class="service-title">Video Editing</h3>
+                        </div>
+                        <p class="service-description">Professional video editing services tailored to your needs.</p>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                        <div class="service-header">
+                            <i class="fas fa-film service-icon"></i>
+                            <h3 class="service-title">Cinematic Shoots</h3>
+                        </div>
+                        <p class="service-description">Professional cinematic shoots services tailored to your needs.</p>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+                        <div class="service-header">
+                            <i class="fas fa-shopping-bag service-icon"></i>
+                            <h3 class="service-title">E-commerce Product Listing</h3>
+                        </div>
+                        <p class="service-description">Professional e-commerce product listing services tailored to your needs.</p>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="700">
+                        <div class="service-header">
+                            <i class="fas fa-pen service-icon"></i>
+                            <h3 class="service-title">Graphic Designing</h3>
+                        </div>
+                        <p class="service-description">Professional graphic designing services tailored to your needs.</p>
+                    </div>
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="800">
+                        <div class="service-header">
+                            <i class="fas fa-video service-icon"></i>
+                            <h3 class="service-title">Custom Media Production</h3>
+                        </div>
+                        <p class="service-description">Professional custom media production services tailored to your needs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2 class="section-title">Our Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card" data-aos="fade-up">
+                        <div class="project-image">
+                            <a href="http://127.0.0.1:5500/index.html" target="_blank">
+                                <img src="resize(1)(1).png" alt="Project Image" class="project-img">
+                            </a>                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Corporate Brand Video</h3>
+                            <p class="project-category">Video Production</p>
+                        </div>
+                    </div>
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="project-image">
+                            <span class="project-placeholder">Project Image</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">E-commerce Product Showcase</h3>
+                            <p class="project-category">Product Visualization</p>
+                        </div>
+                    </div>
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-image">
+                            <span class="project-placeholder">Project Image</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Animated Explainer Video</h3>
+                            <p class="project-category">3D Animation</p>
+                        </div>
+                    </div>
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="project-image">
+                            <span class="project-placeholder">Project Image</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Website Redesign</h3>
+                            <p class="project-category">Web Development</p>
+                        </div>
+                    </div>
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="project-image">
+                            <span class="project-placeholder">Project Image</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Social Media Campaign</h3>
+                            <p class="project-category">Graphic Design</p>
+                        </div>
+                    </div>
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="500">
+                        <div class="project-image">
+                            <span class="project-placeholder">Project Image</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Short Film Production</h3>
+                            <p class="project-category">Cinematic Shoots</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section id="process" class="process-section">
+            <div class="container">
+                <h2 class="section-title">Our Process</h2>
+                <h3 class="process-subtitle">Your one-stop solution for advertising and video creation</h3>
+                <div class="process-grid">
+                    <div class="process-card" data-aos="fade-up">
+                        <div class="process-number">1</div>
+                        <h4 class="process-title">Initial Consultation</h4>
+                    </div>
+                    <div class="process-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="process-number">2</div>
+                        <h4 class="process-title">Concept Development</h4>
+                    </div>
+                    <div class="process-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="process-number">3</div>
+                        <h4 class="process-title">Pre-production Planning</h4>
+                    </div>
+                    <div class="process-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="process-number">4</div>
+                        <h4 class="process-title">Production and Execution</h4>
+                    </div>
+                    <div class="process-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="process-number">5</div>
+                        <h4 class="process-title">Post-production and Delivery</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section id="why-choose-us" class="why-choose-section">
+            <div class="container">
+                <h2 class="section-title">Why Choose On Time Media Production</h2>
+                <div class="reasons-grid">
+                    <div class="reason-item" data-aos="fade-right">
+                        <i class="fas fa-check-circle reason-icon"></i>
+                        <p class="reason-text">Experienced Team of Professionals</p>
+                    </div>
+                    <div class="reason-item" data-aos="fade-right" data-aos-delay="100">
+                        <i class="fas fa-check-circle reason-icon"></i>
+                        <p class="reason-text">Cutting-edge Technology and Equipment</p>
+                    </div>
+                    <div class="reason-item" data-aos="fade-right" data-aos-delay="200">
+                        <i class="fas fa-check-circle reason-icon"></i>
+                        <p class="reason-text">Tailored Solutions for Every Client</p>
+                    </div>
+                    <div class="reason-item" data-aos="fade-right" data-aos-delay="300">
+                        <i class="fas fa-check-circle reason-icon"></i>
+                        <p class="reason-text">Timely Delivery and Project Management</p>
+                    </div>
+                    <div class="reason-item" data-aos="fade-right" data-aos-delay="400">
+                        <i class="fas fa-check-circle reason-icon"></i>
+                        <p class="reason-text">Exceptional Customer Service and Support</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Clients Section -->
+        <section id="clients" class="clients-section">
+            <div class="container">
+                <h2 class="section-title">Our Clients</h2>
+                <div class="clients-grid">
+                    <div class="client-card" data-aos="fade-up">
+                        <div class="client-logo-container">
+                            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/logo.jpg-fWIwsSzQwy3cQA9NSO22ZCyNesTevb.jpeg" alt="NC The Family Store" class="client-logo">
+                            <span class="client-name">NC The Family Store</span>
+                        </div>
+                    </div>
+                    <div class="client-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="client-placeholder">
+                            <span>Client Logo</span>
+                        </div>
+                    </div>
+                    <div class="client-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="client-placeholder">
+                            <span>Client Logo</span>
+                        </div>
+                    </div>
+                    <div class="client-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="client-placeholder">
+                            <span>Client Logo</span>
+                        </div>
+                    </div>
+                    <div class="client-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="client-placeholder">
+                            <span>Client Logo</span>
+                        </div>
+                    </div>
+                    <div class="client-card" data-aos="fade-up" data-aos-delay="500">
+                        <div class="client-placeholder">
+                            <span>Client Logo</span>
+                        </div>
+                    </div>
+                    <div class="client-card" data-aos="fade-up" data-aos-delay="600">
+                        <div class="client-placeholder">
+                            <span>Client Logo</span>
+                        </div>
+                    </div>
+                    <div class="client-card" data-aos="fade-up" data-aos-delay="700">
+                        <div class="client-placeholder">
+                            <span>Client Logo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote Section -->
+        <section id="quote" class="quote-section">
+            <div class="container">
+                <div class="quote-content" data-aos="fade-up">
+                    <h2 class="quote-title">Ideas in mind? Let's bring them to life!</h2>
+                    <p class="quote-text">Transform your vision into reality with On Time Media Production</p>
+                    <button class="quote-button">Get Started</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Contact Us</h2>
+                <div class="contact-grid">
+                    <!-- Contact Information -->
+                    <div class="contact-info" data-aos="fade-right">
+                        <h3 class="contact-subtitle">Get in Touch</h3>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope contact-icon"></i>
+                                <a href="mailto:agencySOSmedia@gmail.com" class="contact-link">agencySOSmedia@gmail.com</a>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone contact-icon"></i>
+                                <a href="tel:+971308097" class="contact-link">+971308097</a>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone contact-icon"></i>
+                                <a href="tel:+7289986916" class="contact-link">+7289986916</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="contact-form-container" data-aos="fade-left">
+                        <h3 class="contact-subtitle">Send us a Message</h3>
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your name" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Your email" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="Message subject" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" name="message" placeholder="Your message" class="form-textarea" required></textarea>
+                            </div>
+                            <button type="submit" class="form-submit-btn">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="about-content" data-aos="fade-up">
+                    <h2 class="section-title">About On Time Media Production</h2>
+                    <div class="about-text">
+                        <p>
+                            On Time Media Production is a full-service creative powerhouse dedicated to bringing your ideas to life. With our
+                            team of experienced professionals and cutting-edge technology, we deliver exceptional results across
+                            various media platforms.
+                        </p>
+                        <p>
+                            From stunning visual effects and 3D animations to captivating website designs and engaging social media
+                            campaigns, we're committed to elevating your brand and telling your story in the most impactful way
+                            possible.
+                        </p>
+                        <p>
+                            Our passion for creativity, attention to detail, and commitment to client satisfaction sets us apart in
+                            the industry. Let us help you turn your vision into reality and make your brand stand out in today's
+                            competitive market.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
+
