@@ -113,7 +113,7 @@ section {
 }
 
 .hero-title {
-  color: var(--white);
+  color: var(--black);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -122,7 +122,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--gray-100);
+ 
 }
 
 .hero-content {
@@ -139,7 +139,7 @@ section {
 .hero-subtitle {
   font-size: 1.25rem;
   opacity: 0;
-  color: var(--white);
+  color: var(--black);
 }
 
 /* Animation Classes */
