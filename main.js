@@ -147,7 +147,7 @@ document.addEventListener("DOMContentLoaded", () => {
       timestamp: new Date().toISOString()
     })
     .then(() => {
-      alert("Message sent successfully!");
+      alert("Thank you for reaching out. We will get back to you soon.");
       document.getElementById("contact-form").reset();
     })
     .catch((error) => {
