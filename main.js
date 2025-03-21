@@ -1,3 +1,23 @@
+// Import Firebase functions
+import { initializeApp } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js";
+import { getDatabase, ref, push } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-database.js";
+
+// Your Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyDF3JQkQnx3UCiL24qEkTeNVYxL5rE7A2M",
+  authDomain: "otmproduction-4b199.firebaseapp.com",
+  databaseURL: "https://otmproduction-4b199-default-rtdb.firebaseio.com",
+  projectId: "otmproduction-4b199",
+  storageBucket: "otmproduction-4b199.appspot.com",
+  messagingSenderId: "593364329800",
+  appId: "1:593364329800:web:d47e498c8f3edb8a203f7d",
+  measurementId: "G-1X69KBVPS5"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const database = getDatabase(app);
+
 document.addEventListener("DOMContentLoaded", () => {
   // Initialize AOS (Animate On Scroll)
   AOS.init({
@@ -105,28 +125,36 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   })
 
-  // Contact Form Submission
-  const contactForm = document.getElementById("contact-form")
-  if (contactForm) {
-    contactForm.addEventListener("submit", (e) => {
-      e.preventDefault()
-
-      // Get form data
-      const formData = new FormData(contactForm)
-      const formDataObj = {}
-      formData.forEach((value, key) => {
-        formDataObj[key] = value
-      })
-
-      // Log form data (replace with actual form submission)
-      console.log("Form submitted:", formDataObj)
-
-      // Show success message (you can replace this with your own implementation)
-      alert("Thank you for your message! We will get back to you soon.")
-
-      // Reset form
-      contactForm.reset()
+  document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+  
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const subject = document.getElementById("subject").value;
+    const message = document.getElementById("message").value;
+  
+    if (!name || !email || !subject || !message) {
+      alert("Please fill in all fields.");
+      return;
+    }
+  
+    const contactRef = ref(database, 'contacts');
+    push(contactRef, {
+      name,
+      email,
+      subject,
+      message,
+      timestamp: new Date().toISOString()
     })
-  }
+    .then(() => {
+      alert("Message sent successfully!");
+      document.getElementById("contact-form").reset();
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+      alert("Failed to send message. Please try again.");
+    });
+  });
+  
 })
 
