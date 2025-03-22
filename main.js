@@ -147,10 +147,10 @@ document.addEventListener("DOMContentLoaded", () => {
       timestamp: new Date().toISOString()
     })
     .then(() => {
-      showToast("Thank you for reaching out. We will get back to you soon.");
-      document.getElementById("contact-form").reset();
-    })
-    
+  showToast("Thank you for reaching out. We will get back to you soon.");
+  document.getElementById("contact-form").reset();
+})
+
     .catch((error) => {
       console.error("Error:", error);
       alert("Failed to send message. Please try again.");
@@ -165,6 +165,6 @@ document.addEventListener("DOMContentLoaded", () => {
       toast.style.visibility = "hidden";
     }, 3000); // Toast will disappear after 3 seconds
   }
-  
+
 })
 
